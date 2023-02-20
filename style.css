@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgba(151, 146, 228, 1);
+    --secondary: rgba(0, 133, 252, 1);
+    --light: rgba(254, 255, 254, 1);
+    --dark: rgba(50, 51, 50, 1);     
+}
+
+.debug header {
+    height: 70px;
+    background-color: var(--secondary);
+}
+
+.debug .container {
+    height: 500px;
+    background-color: darkolivegreen;
+}
+
+.container {
+    width: 80%;
+    max-width: 1152px;
+    margin: auto;
+    background-color: darkslategrey;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-30 {
+    width: 30%;
+}
