@@ -28,39 +28,24 @@
     background-color: darkslategrey;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .card {
     height: 150px;
     background-color:darkolivegreen;
     border: 1px solid black;
 }
 
-.col-12 {
+.col-12,
+.col-8,
+.col-6,
+.col-4 {
     width: 100%;
 }
-
-.col-8 {
-    width: calc(100%/12 * 8);
-}
-
-.col-6 {
-    width: calc(100%/12 * 6);
-}
-
-.col-4 {
-    width: calc(100%/12 * 4);
-}   
 
 #planning,
 #benefits,
 #getstarted {
     background-color: blueviolet;
-    height: 400px;
+    min-height: 150px;
 }
 
 #site-footer {
@@ -68,6 +53,66 @@
     height: 150px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1140px) {
+    .col-12 {
+        width: calc(100%/12 * 12)
+    }
+    
+    .col-8 {
+        width: calc(100%/12 * 8);
+    }
+    
+    .col-6 {
+        width: calc(100%/12 * 6);
+    }
+    
+    .col-4 {
+        width: calc(100%/12 * 4);
+    } 
+    
+    .d-flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
     
 }
+
+@media screen and (min-width: 768px) {
+    .col-12 {
+        width: calc(100%/12 * 12)
+    }
+    
+    .col-8 {
+        width: calc(100%/12 * 8);
+    }
+    
+    .col-6 {
+        width: calc(100%/12 * 6);
+    }
+    
+    .col-4 {
+        width: calc(100%/12 * 4);
+    }
+
+    .col-tb-6 {
+        width: calc(100%/12 * 6);
+    }
+
+    .col-tb-12 {
+        width: 100%;
+    }
+    
+    .d-flex {
+        display: flex;
+    }
+    
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+}
+
