@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
 }
 
 :root {
@@ -53,13 +54,20 @@
 
 .col-4 {
     width: calc(100%/12 * 4);
+}   
+
+#planning,
+#benefits,
+#getstarted {
+    background-color: blueviolet;
+    height: 400px;
 }
 
+#site-footer {
+    background-color: rgba(34, 34, 34, 0.781);
+    height: 150px;
+}
 
-
-
-
-#planning {
-    background-color: blueviolet;
-    height: 500px;
+@media screen and (min-width: 480px) {
+    
 }
