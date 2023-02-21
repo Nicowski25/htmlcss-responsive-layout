@@ -9,7 +9,8 @@
     --primary: #b5ddff;
     --secondary: #356cf9;
     --light: rgba(254, 255, 254, 1);
-    --dark: rgba(50, 51, 50, 1);     
+    --dark: rgba(50, 51, 50, 1); 
+    --violet : #a269bd;    
 }
 
 .debug header {
@@ -32,17 +33,20 @@
     margin-bottom: 2rem ;
 }
 
+.w-100 {
+    width: 100%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
 /* #endregion padding/margin */
 
 /* #region utilities */
 
 .bgc-p {
     background-color: var(--primary);
-}
-
-h2 {
-    color: var(--secondary);
-    padding: 1rem;
 }
 
 .container {
@@ -129,6 +133,11 @@ li {
     color: var(--secondary);
 }
 
+#demo h2 {
+    color: var(--secondary);
+    padding: 1rem;
+}
+
 .btn-apps {
     color: var(--light);
     font-size: 1rem;
@@ -140,7 +149,8 @@ li {
 
 #phone {
     width: 70%;
-    padding: -1rem;
+    padding: none;
+    margin: none;
 }
 
 .democard {
@@ -150,10 +160,42 @@ li {
     border: 10px solid var(--light);
 }
 
+#planning {
+    padding: 3rem;
+}
+
+#planning-container {
+    width: 65%;
+    margin: auto;
+    align-items: end;
+}
+
+.planningcard {
+    color: var(--light);
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.planningcard-white {
+    color: var(--dark);
+    background-color: var(--light);
+    border-radius: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.btn-down {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: var(--violet);
+    border-radius: 50%;
+    border: none;
+}
+
 #planning,
 #benefits,
 #getstarted {
-    background-color: blueviolet;
+    background-color: #a269bd;
     min-height: 150px;
 }
 
