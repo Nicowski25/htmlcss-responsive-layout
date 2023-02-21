@@ -6,8 +6,8 @@
 }
 
 :root {
-    --primary: rgba(151, 146, 228, 1);
-    --secondary: rgba(0, 133, 252, 1);
+    --primary: rgb(62, 110, 212);
+    --secondary: rgb(0, 89, 167);
     --light: rgba(254, 255, 254, 1);
     --dark: rgba(50, 51, 50, 1);     
 }
@@ -17,28 +17,99 @@
     background-color: var(--secondary);
 }
 
-.debug .container {
-    background-color: darkolivegreen;
+
+/* #region utilities */
+
+.bgc-p {
+    background-color: var(--primary);
+}
+
+h3 {
+    color: var(--secondary);
 }
 
 .container {
     width: 80%;
     max-width: 1152px;
     margin: auto;
-    background-color: darkslategrey;
+/*     background-color: darkslategrey; */
 }
 
 .card {
-    height: 150px;
-    background-color:darkolivegreen;
+    border-radius: 1rem;
     border: 1px solid black;
+    min-height: 150px;
 }
 
-.col-12,
-.col-8,
-.col-6,
-.col-4 {
+.col-12 {
     width: 100%;
+}
+
+.col-8 {
+    width: calc(100%/12 * 8);
+}
+
+.col-6 {
+    width: calc(100%/12 * 8);
+}
+
+.col-4 {
+    width: calc(100%/12 * 8);
+}
+
+.ls-none {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn-gs {
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 1rem;
+    border-style: none;
+    background-color: var(--light);
+}
+
+/* #endregion utiities */
+
+/* #region header */
+
+#site-header {
+    max-width: 100%;
+    height: 100%;
+    color: var(--light);
+    background-color: var(--secondary);
+}
+
+.h-container {
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    align-items: center;
+}
+
+li {
+    margin: 1rem;
+}
+
+/* #endregion header */
+
+/* #region main */
+
+#demoapp {
+    align-items: center;
+    padding: 1rem;
+}
+
+#phone {
+    align-items: end;
 }
 
 #planning,
@@ -47,6 +118,8 @@
     background-color: blueviolet;
     min-height: 150px;
 }
+
+/* #endregion main */
 
 #site-footer {
     background-color: rgba(34, 34, 34, 0.781);
@@ -70,14 +143,22 @@
         width: calc(100%/12 * 4);
     }
 
-    .col-tb-6 {
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .col-md-8 {
+        width: calc(100%/12 * 8);
+    }
+    
+    .col-md-6 {
         width: calc(100%/12 * 6);
     }
 
-    .col-tb-12 {
-        width: 100%;
+    .col-md-4 {
+        width: calc(100%/12 * 4);
     }
-    
+
     .d-flex {
         display: flex;
     }
@@ -105,13 +186,24 @@
         width: calc(100%/12 * 4);
     } 
 
-    .col-tb-12 {
+    .col-lg-12 {
         width: 100%;
     }
+
+    .col-lg-8 {
+        width: calc(100%/12 * 8);
+    }
+
+    .col-lg-6 {
+        width: calc(100%/12 * 6);
+    }
     
+    .col-lg-4 {
+        width: calc(100%/12 * 4);
+    }
+
     .d-flex {
         display: flex;
-        justify-content: center;
     }
 
     .wrap {
