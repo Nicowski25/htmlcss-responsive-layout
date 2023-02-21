@@ -33,6 +33,11 @@
     margin-bottom: 2rem ;
 }
 
+.py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 .w-100 {
     width: 100%;
 }
@@ -47,6 +52,10 @@
 
 .bgc-p {
     background-color: var(--primary);
+}
+
+.c-violet {
+    color: var(--violet);
 }
 
 .container {
@@ -98,6 +107,10 @@ img {
     text-align: center;
 }
 
+.text-l {
+    font-size: 250%;
+}
+
 /* #endregion utiities */
 
 /* #region header */
@@ -110,7 +123,7 @@ img {
 }
 
 .h-container {
-    width: 80%;
+    width: 70%;
     margin: auto;
     justify-content: space-between;
     align-items: center;
@@ -127,6 +140,13 @@ li {
 /* #endregion header */
 
 /* #region main */
+
+/* #region demo */
+
+#demo-container {
+    width: 70%;
+    margin: auto;
+}
 
 #demo i {
     font-size: 400%;
@@ -160,12 +180,16 @@ li {
     border: 10px solid var(--light);
 }
 
+/* #endregion demo */
+
+/* #region planning */
+
 #planning {
     padding: 3rem;
 }
 
 #planning-container {
-    width: 65%;
+    width: 60%;
     margin: auto;
     align-items: end;
 }
@@ -190,6 +214,38 @@ li {
     background-color: var(--violet);
     border-radius: 50%;
     border: none;
+}
+
+/* #endregion planning */
+
+/* #region testimonials */
+
+#testimonial-container {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+#testimonial-intro {
+    text-align: center;
+}
+
+.testimonial-card {
+    background-color: var(--violet);
+    padding: 2rem;
+    color: var(--light);
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.testimonial-image {
+    width: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonial-card p,h4 {
+    padding-left: 2rem;
 }
 
 #planning,
