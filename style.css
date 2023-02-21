@@ -6,8 +6,8 @@
 }
 
 :root {
-    --primary: rgb(62, 110, 212);
-    --secondary: rgb(0, 89, 167);
+    --primary: #b5ddff;
+    --secondary: #356cf9;
     --light: rgba(254, 255, 254, 1);
     --dark: rgba(50, 51, 50, 1);     
 }
@@ -17,6 +17,22 @@
     background-color: var(--secondary);
 }
 
+/* #region padding/margin */
+.pd-1 {
+    padding: 1rem;
+}
+
+.my-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem ;
+}
+
+.my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem ;
+}
+
+/* #endregion padding/margin */
 
 /* #region utilities */
 
@@ -24,8 +40,9 @@
     background-color: var(--primary);
 }
 
-h3 {
+h2 {
     color: var(--secondary);
+    padding: 1rem;
 }
 
 .container {
@@ -73,6 +90,10 @@ img {
     background-color: var(--light);
 }
 
+.text-center {
+    text-align: center;
+}
+
 /* #endregion utiities */
 
 /* #region header */
@@ -103,13 +124,30 @@ li {
 
 /* #region main */
 
-#demoapp {
-    align-items: center;
-    padding: 1rem;
+#demo i {
+    font-size: 400%;
+    color: var(--secondary);
+}
+
+.btn-apps {
+    color: var(--light);
+    font-size: 1rem;
+    padding: 10px 3rem;
+    border-radius: 1rem;
+    border-style: none;
+    background-color: var(--secondary);
 }
 
 #phone {
-    align-items: end;
+    width: 70%;
+    padding: -1rem;
+}
+
+.democard {
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: var(--primary);
+    border: 10px solid var(--light);
 }
 
 #planning,
